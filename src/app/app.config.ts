@@ -17,8 +17,9 @@ export const appConfig: ApplicationConfig = {
       provideAuth(() => getAuth()),
       provideFunctions(() => getFunctions()),
       provideStorage(() => getStorage()),
-      provideMessaging(() => getMessaging())
+      provideMessaging(() => getMessaging()),
    // ),
-  //  provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-9837b","appId":"1:510406748985:web:782aecb6bff5458a9e56e8","storageBucket":"friendlychat-9837b.appspot.com","locationId":"europe-west3","apiKey":"AIzaSyCuAWzcm7zIkrUvlbl6cpzjYF4RkQ59n5s","authDomain":"friendlychat-9837b.firebaseapp.com","messagingSenderId":"510406748985"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
+   provideRouter(routes)
+  // provideFirebaseApp(() => initializeApp({ "projectId": "friendlychat-9837b", "appId": "1:510406748985:web:782aecb6bff5458a9e56e8", "storageBucket": "friendlychat-9837b.appspot.com", "locationId": "europe-west3", "apiKey": "AIzaSyCuAWzcm7zIkrUvlbl6cpzjYF4RkQ59n5s", "authDomain": "friendlychat-9837b.firebaseapp.com", "messagingSenderId": "510406748985" })), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };

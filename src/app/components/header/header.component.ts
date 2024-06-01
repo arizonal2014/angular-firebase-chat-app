@@ -12,4 +12,6 @@ import { ChatService } from 'src/app/services/chat.service';
 export class HeaderComponent {
   chatService = inject(ChatService);
   user$ = this.chatService.user$;
+  user: any;
+  
 }
